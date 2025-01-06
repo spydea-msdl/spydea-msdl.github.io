@@ -42,7 +42,7 @@ function langJsonStrToHTML(jsonStr) {
     let container = document.createElement('div');
 
     let header = document.createElement('h2');
-    header.textContent = "Ürün dili seç;
+    header.textContent = "Ürün dili seç";
     container.appendChild(header);
 
     let info = document.createElement('p');
