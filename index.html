@@ -23,29 +23,29 @@
 </head>
 
 <body>
-    <h1>Microsoft Software Download Listing 🏳️‍🌈</h1>
+    <h1>Microsoft Software Download Listing</h1>
 
     <a href="https://github.com/gravesoft/msdl">
-        <b>Source code on GitHub</b>
+        <b>GitHub'da kaynak kodu</b>
     </a>
 
     <noscript>
-        <p>This page requires JavaScript to work.</p>
+        <p>Bu sayfanın çalışması için JavaScript gereklidir.</p>
     </noscript>
 
     <div id="products-list">
-        <h2>Select product</h2>
-        <input id="search-products" type="search" placeholder="Search with regex..." onInput="updateResults();">
+        <h2>Ürün seç</h2>
+        <input id="search-products" type="search" placeholder="Arama yap" onInput="updateResults();">
         <div id="quick-search">
             📌
             <button onClick="setSearch('Windows 8\\.1');">Windows 8.1</button>
-            <button onClick="setSearch('Windows 10 22H2');">Latest Windows 10</button>
-            <button onClick="setSearch('24H2');">Latest Windows 11</button>
+            <button onClick="setSearch('Windows 10 22H2');">En son Windows 10 sürümü</button>
+            <button onClick="setSearch('24H2');">En son Windows 11 sürümü</button>
         </div>
         <table style="table-layout: auto;">
             <thead>
                 <tr>
-                    <th>Product</th>
+                    <th>Ürün</th>
                     <th>ID</th>
                 </tr>
             </thead>
@@ -56,19 +56,19 @@
     <div id="msdl-ms-content"></div>
 
     <div id="msdl-please-wait">
-        <h2>Please wait...</h2>
-        <p>Please wait while the data you requested is being retrieved.</p>
+        <h2>Lütfen bekle...</h2>
+        <p>Lütfen istediğiniz veriler alınırken bekleyin.</p>
     </div>
 
     <div id="msdl-processing-error">
-        <h2>Error</h2>
-        <p>An error has occurred while processing your request. If reloading the page does not work, <a
-                href="https://gravesoft.dev/troubleshoot/">contact us</a> or create an issue on GitHub.</p>
+        <h2>Hata</h2>
+        <p>İsteiğiniz işlenirken bir sorun meydana geldi. Eğer sayfayı yenilemek bir işe yaramıyorsa, <a
+                href="https://gravesoft.dev/troubleshoot/">bize ulaşın</a> ya da Github üzerinden bir Issue oluşturun.</p>
     </div>
 
     <div id="back-to-products">
         <hr>
-        <button onClick="backToProducts();">Go back to the product list</button>
+        <button onClick="backToProducts();">Ürün listesine geri dön.</button>
     </div>
 
     <input id="msdl-session-id" type="hidden">
