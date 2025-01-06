@@ -46,7 +46,7 @@ function langJsonStrToHTML(jsonStr) {
     container.appendChild(header);
 
     let info = document.createElement('p');
-    info.innerHTML = "Windows'u yüklediğinizde de aynı dili seçmeniz gerekecektir. Şu anda hangi dili kullandığınızı görmek için PC ayarlarında <strong>Zaman ve dil</strong> ya da Denetim Masası'nda <strong>Bölge</strong> bölümüne gidin.";
+    info.innerHTML = "Windowsu yüklediğinizde de aynı dili seçmeniz gerekecektir. Şu anda hangi dili kullandığınızı görmek için PC ayarlarında <strong>Zaman ve dil</strong> ya da Denetim Masasında <strong>Bölge</strong> bölümüne gidin.";
     container.appendChild(info);
 
     let select = document.createElement('select');
@@ -136,14 +136,14 @@ function onDownloadsXhrChange() {
 
             let downloadButton = document.createElement('a');
             downloadButton.href = option.Uri;
-            downloadButton.textContent = `${option.LocalizedProductDisplayName} indir.`;
+            downloadButton.textContent = `Download ${option.LocalizedProductDisplayName}`;
             downloadButton.target = "_blank";
             optionContainer.appendChild(downloadButton);
 
             msContent.appendChild(optionContainer);
         });
     } else {
-        msContent.innerHTML = "<p>No download options available.</p>";
+        msContent.innerHTML = "<p>İndirilebilir bir seçenek yok.</p>";
     }
 }
 
@@ -193,7 +193,7 @@ function displayResponseFromServer() {
             msContent.appendChild(br);
         });
     } else {
-        msContent.innerHTML = "<p>No download options available.</p>";
+        msContent.innerHTML = "<p>İndirilebilir bir seçenek yok.</p>";
     }
 }
 
