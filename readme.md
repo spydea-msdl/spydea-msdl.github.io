@@ -1,11 +1,11 @@
 Microsoft Software Download Listing
 ===================================
-Microsoft Software Download Listing lets you browse and download products from Microsoft Software Download pages.
+Microsoft Software Download Listing, Microsoft Yazılım İndirme sayfalarından ürünlere göz atmanızı ve ürünleri indirmenizi sağlar.
 
-Products list
+Ürün listesi
 -------------
-The list of products available on the page is available in the `data/products.json` file. This file should be updated when new versions of Windows are released at https://www.microsoft.com/software-download.
+Sayfada bulunan ürünlerin listesi `data/products.json` bölümünde yer almaktadır. Windows'un yeni sürümleri şu adreste yayınlandığında bu dosya güncellenmelidir: https://www.microsoft.com/software-download.
 
-License
+Lisans
 -------
-This project is licensed under the terms of GNU Affero General Public License Version 3.
+Bu proje GNU Affero General Public License Version 3 koşulları altında lisanslanmıştır.
