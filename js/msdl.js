@@ -42,11 +42,11 @@ function langJsonStrToHTML(jsonStr) {
     let container = document.createElement('div');
 
     let header = document.createElement('h2');
-    header.textContent = "Select the product language";
+    header.textContent = "Ürün dili seç;
     container.appendChild(header);
 
     let info = document.createElement('p');
-    info.innerHTML = "You'll need to choose the same language when you install Windows. To see what language you're currently using, go to <strong>Time and language</strong> in PC settings or <strong>Region</strong> in Control Panel.";
+    info.innerHTML = "Windows'u yüklediğinizde de aynı dili seçmeniz gerekecektir. Şu anda hangi dili kullandığınızı görmek için PC ayarlarında <strong>Zaman ve dil</strong> ya da Denetim Masası'nda <strong>Bölge</strong> bölümüne gidin.";
     container.appendChild(info);
 
     let select = document.createElement('select');
@@ -55,7 +55,7 @@ function langJsonStrToHTML(jsonStr) {
     let defaultOption = document.createElement('option');
     defaultOption.value = "";
     defaultOption.selected = "selected";
-    defaultOption.textContent = "Choose one";
+    defaultOption.textContent = "Birini seç";
     select.appendChild(defaultOption);
 
     json.Skus.forEach(sku => {
@@ -69,7 +69,7 @@ function langJsonStrToHTML(jsonStr) {
 
     let button = document.createElement('button');
     button.id = "submit-sku";
-    button.textContent = "Submit";
+    button.textContent = "Gönder";
     button.disabled = true;
     button.setAttribute("onClick", "getDownload();");
 
@@ -136,7 +136,7 @@ function onDownloadsXhrChange() {
 
             let downloadButton = document.createElement('a');
             downloadButton.href = option.Uri;
-            downloadButton.textContent = `Download ${option.LocalizedProductDisplayName}`;
+            downloadButton.textContent = `${option.LocalizedProductDisplayName} indir.`;
             downloadButton.target = "_blank";
             optionContainer.appendChild(downloadButton);
 
